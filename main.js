@@ -30,20 +30,20 @@ if (otraConsulta !== "Salir" && cursoIngresado !== "salir" && cursoIngresado !==
     switch(otraConsulta){
 
         case "Desarrollo":
-                console.log("Su curso de " + cursoIngresado + " incia el dia 13/02/20223");
+                console.log("Su curso de " + otraConsulta + " incia el dia 13/02/20223");
                 break
     
         case "Idiomas":
-                console.log("Su curso de " + cursoIngresado + " incia el dia 20/02/20223");
+                console.log("Su curso de " + otraConsulta + " incia el dia 20/02/20223");
                 break
     
         case "Diseño":
-                console.log("Su curso de " + cursoIngresado + " incia el dia 06/03/20223");
+                console.log("Su curso de " + otraConsulta + " incia el dia 06/03/20223");
                 break
     
             default:
                 console.log("Usted ingreso un curso que no se dicta")
                 break;
     }
-} else (otraConsulta === "Salir" && cursoIngresado === "salir" && cursoIngresado === "SALIR") 
+} else (otraConsulta === "Salir" && otraConsulta === "salir" && otraConsulta === "SALIR") 
     alert ("Gracias por su consulta!");
