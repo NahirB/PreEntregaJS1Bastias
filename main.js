@@ -2,9 +2,9 @@ let cursoIngresado = prompt("Ingrese el nombre del curso que compró (Desarrollo
 
 function consultarCurso(){
     while (cursoIngresado !== "Desarrollo" && cursoIngresado !== "Idiomas" && cursoIngresado !== "Diseño") {
-        let cursoIngresado = (prompt("Ingrese la opción correcta (Desarrollo, Idiomas o Diseño)"));
+        let cursoIngresado = prompt("Ingrese la opción correcta (Desarrollo, Idiomas o Diseño)");
     }
-    mostrarInfoDeCursos(cursoIngresado)
+    mostrarInfoDeCursos(cursoIngresado);
 }
 
 
@@ -14,37 +14,37 @@ function mostrarInfoDeCursos(){
 
     case "Desarrollo":
             console.log("Su curso de " + cursoIngresado + " incia el dia 13/02/20223");
-            mostrarMenu()
+            mostrarMenu();
             break;
     case "Idiomas":
             console.log("Su curso de " + cursoIngresado + " incia el dia 20/02/20223");
-            mostrarMenu()
+            mostrarMenu();
             break;
     case "Diseño":
             console.log("Su curso de " + cursoIngresado + " incia el dia 06/03/2023");
-            mostrarMenu()
+            mostrarMenu();
             break;
         default:
             console.log("Usted ingreso un curso que no se dicta")
-            mostrarInfoDeCursos()
+            mostrarInfoDeCursos();
             break;
     }
 }
-mostrarInfoDeCursos()
+mostrarInfoDeCursos();
 
 function mostrarMenu(){
-    let otraConsulta = (prompt("¿Desea realizar otra consulta? SI para continuar o NO parasalir del sistema)).toLowerCase();
+    let otraConsulta = prompt("¿Desea realizar otra consulta? SI para continuar o NO para salir del sistema").toLowerCase();
 
- switch(otraConsulta){
+    switch(otraConsulta){
 
         case "si":
-            mostrarInfoDeCursos()
-                break;
+            mostrarInfoDeCursos();
+            break;
         case "no":
-                break;
+            break;
         default:
-                console.log("Error")
-                mostrarMenu()
-                break;
+            console.log("Error")
+            mostrarMenu();
+            break;
     }
 }
