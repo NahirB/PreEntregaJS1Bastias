@@ -1,0 +1,13 @@
+.banner{
+    padding: 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Imagenes/principal-salud-estudio-1280x720x80.jpg);
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+        position: center;
+    }
+}
