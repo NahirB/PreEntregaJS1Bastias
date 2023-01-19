@@ -1,4 +1,4 @@
-header {
+/*header {
     color: white;
     height: 80px;
     background: #4daab6;
@@ -6,9 +6,16 @@ header {
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
-    a{padding: 10px;}
     a:hover{
         color:white;
-        margin: 10px;
     }
+}*/
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid white;
+    display: block;
+    padding: 5px 15px;
+}
+.social{
+    padding: 20px;
 }
