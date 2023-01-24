@@ -1,10 +1,9 @@
-let cursoIngresado = prompt("Ingrese el nombre del curso que compró (Desarrollo, Idiomas o Diseño)")
+let cursoIngresado = prompt("Ingrese el nombre del curso que compró (Desarrollo, Idiomas o Diseño)");
 
 function consultarCurso(){
-    while (cursoIngresado !== "Desarrollo" && cursoIngresado !== "Idiomas" && cursoIngresado !== "Diseño") {
-        let cursoIngresado = prompt("Ingrese la opción correcta (Desarrollo, Idiomas o Diseño)");
+    while (cursoIngresado !== "desarrollo" && cursoIngresado !== "idiomas" && cursoIngresado !== "diseño") {
+        cursoIngresado = prompt("Ingrese la opción correcta (Desarrollo, Idiomas o Diseño)");
     }
-    mostrarInfoDeCursos(cursoIngresado);
 }
 
 
@@ -26,7 +25,7 @@ function mostrarInfoDeCursos(){
             break;
         default:
             console.log("Usted ingreso un curso que no se dicta")
-            mostrarInfoDeCursos();
+            mostrarMenu();
             break;
     }
 }
