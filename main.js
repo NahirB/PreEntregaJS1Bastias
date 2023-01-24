@@ -1,3 +1,48 @@
+
+// SIMULACION DE PLATAFORMA DE CURSOS
+
+//clases
+class Alumno {
+    
+    constructor(nombre, dni, curso) {
+        this.nombre = nombre;
+        this.dni = dni;
+        this.curso = curso;
+    }
+}
+
+// Funciones
+function obtenerIndiceDeAlumnoPorDNI (dni) {
+
+let indiceAlumno = -1;
+
+    for(let i = 0; i < alumnos.length; i++) {
+
+    if(alumnos[i].dni === dni) {
+        indiceAlumno = i;
+        break;
+    }
+}
+
+return indiceAlumno;
+}
+
+function alumnoExiste (dni) {
+
+let encontrado = false;
+
+    for(const alumno of alumnos) {
+
+        if(alumno.dni === dni) {
+            encontrado = true;
+            break;
+        }
+
+    }
+
+    return encontrado;
+}
+
 let cursoIngresado = prompt("Ingrese el nombre del curso que compró (Desarrollo, Idiomas o Diseño)");
 
 function consultarCurso(){
@@ -5,22 +50,20 @@ function consultarCurso(){
         cursoIngresado = prompt("Ingrese la opción correcta (Desarrollo, Idiomas o Diseño)");
     }
 }
-
-
 function mostrarInfoDeCursos(){
 
     switch(cursoIngresado){
 
     case "Desarrollo":
-            console.log("Su curso de " + cursoIngresado + " incia el dia 13/02/20223");
+            console.log("Su curso de " + cursoIngresado + " finaliza el dia 24/02/20223");
             mostrarMenu();
             break;
     case "Idiomas":
-            console.log("Su curso de " + cursoIngresado + " incia el dia 20/02/20223");
+            console.log("Su curso de " + cursoIngresado + " finaliza el dia 10/03/20223");
             mostrarMenu();
             break;
     case "Diseño":
-            console.log("Su curso de " + cursoIngresado + " incia el dia 06/03/2023");
+            console.log("Su curso de " + cursoIngresado + " finaliza el dia 14/04/2023");
             mostrarMenu();
             break;
         default:
@@ -47,3 +90,61 @@ function mostrarMenu(){
             break;
     }
 }
+function pagarCuota(){
+
+    let verCuota = parseInt(prompt("Ingrese el número de la cuota que quiere abonar: "));
+
+    const precioCuota = 1500;
+    const cuota = [
+        1, 1, 1, 1, 1, 1,
+    ]
+        
+}
+
+
+
+
+
+
+
+
+
+    // Lista de Alumnos
+const clientes = [     
+    new Alumno("Santiago", "36589456", "Desarrollo"),
+    new Alumno("Xiomara", "42058377", "Diseño"),
+    new Alumno("Agustina", "39867425", "Idiomas"),
+    new Alumno("Lucas", "44049989", "Desarrollo"),
+    new Alumno("Lucia", "40213705", "Diseño"),
+    new Alumno("Fernando", "37596812", "Idiomas"),
+];
+
+let operacion = prompt("Ingrese alguna operación: 1- Consultar finalización de mi Curso, 2- Pagar cuota, 3- Ver mis Notas, 4- Salir");
+
+while(operacion !== "Salir") {
+
+    switch(operacion) {
+
+        case "1":
+        consultarCurso();
+            break;
+
+        case "2":
+            pagarCuota();
+            break;
+
+        case "3":
+            verMisNotas();
+            break;
+
+        default:
+            console.log("Opción incorrecta");
+            break;
+    }
+
+     // Vuelvo a pedir que ingrese una operación
+    operacion = prompt("Ingrese una nueva operación: 1- Consultar finalización de mi Curso, 2- Pagar cuota, 3- Ver mis Notas, 4- Salir");
+}
+
+
+console.log(alumnos);
