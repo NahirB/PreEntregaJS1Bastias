@@ -1,6 +1,8 @@
 
 // SIMULACION DE PLATAFORMA DE CURSOS
 
+/*const { green } = require("color-name");
+
 //clases
 class Alumno {
     
@@ -100,17 +102,39 @@ function pagarCuota(){
     ]
         
 }
+*/
+const clases = {
+//     % asist-prom-t.p
+    html: [100,6,3,"html"],
+    css: [100,8,2,"css"],
+    boxModeling: [80,8,4,"boxModeling"],
+    flexbox: [92,8,2,"flexbox"],
+    grids: [86,6,3,"grids"],
+    git: [95,9,4,"git"],
+    gitHub: [100,6,2,"gitHub"],
+    frameworks: [98,10,4,"frameworks"],
+}
 
-
-
-
+const asistencia = ()=>{
+    for (clase in clases){
+        let asistencias = clases[clase][0];
+        if (asistencias >= 90){
+            console.log(clases[clase][3]);
+            console.log("%c  Aprobado", "color:green");
+        } else {
+            console.log(clases[clase][3]);
+            console.log("%c  Desaprobado", "color:red");
+        }
+    }
+}
+asistencia();
 
 
 
 
 
     // Lista de Alumnos
-const clientes = [     
+const alumnos = [     
     new Alumno("Santiago", "36589456", "Desarrollo"),
     new Alumno("Xiomara", "42058377", "Diseño"),
     new Alumno("Agustina", "39867425", "Idiomas"),

@@ -24,6 +24,7 @@ body {
   padding: 5px 15px; }
 
 .social {
+  display: flex;
   padding: 20px; }
 
 .banner {
