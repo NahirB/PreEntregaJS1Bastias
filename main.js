@@ -1,7 +1,7 @@
 
 // SIMULACION DE PLATAFORMA DE CURSOS
 
-/*const { green } = require("color-name");
+const { green } = require("color-name");
 
 //clases
 class Alumno {
@@ -92,17 +92,6 @@ function mostrarMenu(){
             break;
     }
 }
-function pagarCuota(){
-
-    let verCuota = parseInt(prompt("Ingrese el número de la cuota que quiere abonar: "));
-
-    const precioCuota = 1500;
-    const cuota = [
-        1, 1, 1, 1, 1, 1,
-    ]
-        
-}
-*/
 const clases = {
 //     % asist-prom-t.p
     html: [100,6,3,"html"],
@@ -130,10 +119,7 @@ const asistencia = ()=>{
 asistencia();
 
 
-
-
-
-    // Lista de Alumnos
+    // Lista de Alumnos- Datos
 const alumnos = [     
     new Alumno("Santiago", "36589456", "Desarrollo"),
     new Alumno("Xiomara", "42058377", "Diseño"),
@@ -143,7 +129,7 @@ const alumnos = [
     new Alumno("Fernando", "37596812", "Idiomas"),
 ];
 
-let operacion = prompt("Ingrese alguna operación: 1- Consultar finalización de mi Curso, 2- Pagar cuota, 3- Ver mis Notas, 4- Salir");
+let operacion = prompt("Ingrese alguna operación: 1- Consultar finalización de mi Curso, 2- Ver mis datos, 3- Ver mis Notas, 4- Salir");
 
 while(operacion !== "Salir") {
 
@@ -154,7 +140,7 @@ while(operacion !== "Salir") {
             break;
 
         case "2":
-            pagarCuota();
+            verDatos();
             break;
 
         case "3":
@@ -167,7 +153,7 @@ while(operacion !== "Salir") {
     }
 
      // Vuelvo a pedir que ingrese una operación
-    operacion = prompt("Ingrese una nueva operación: 1- Consultar finalización de mi Curso, 2- Pagar cuota, 3- Ver mis Notas, 4- Salir");
+    operacion = prompt("Ingrese una nueva operación: 1- Consultar finalización de mi Curso, 2- Ver mis datos, 3- Ver mis Notas, 4- Salir");
 }
 
 
