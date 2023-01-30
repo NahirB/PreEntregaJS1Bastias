@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NahirB/PreEntregaJS1Bastias/issues"
+    "url": "https://github.com/NahirB/PreEntregaJS2Bastias/issues"
   },
-  "homepage": "https://github.com/NahirB/PreEntregaJS1Bastias#readme",
+  "homepage": "https://github.com/NahirB/PreEntregaJS2Bastias#readme",
   "dependencies": {
     "abbrev": "^1.1.1",
     "agentkeepalive": "^4.2.1",
